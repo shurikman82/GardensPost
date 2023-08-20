@@ -17,11 +17,15 @@
   <body>
     {% include "includes/header.html" %}
     <main style="background-color: yellowgreen">
-      <h6 class="mb-3 text-center">
-        <p>________________________________</p>
-        На сайте Вы найдёте множество статей по правильной посадке овощей, зелени, плодовых деревьев, кустарников и цветов
-        для своей дачи или садового участка.
+      <h6 class="container py-3 text-left">
+        <p>На сайте Вы найдёте множество статей по правильной посадке овощей,</p>
+        <p> зелени, плодовых деревьев, кустарников и цветов</p>
+        <p>для своей дачи или садового участка.</p>
       </h6>
+      <div>
+        <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{% static 'img/flowers.jpg' %}">
+      </div>
+      <hr>
       <div class="container py-5">
         <p>
         {% block content %}{% endblock %}
