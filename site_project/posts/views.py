@@ -193,6 +193,7 @@ class CommentCreateView(LoginRequiredMixin, CreateView):
     queryset = Comment.objects
     pk_url_kwarg = 'pk'
     posts = None
+    template_name = 'posts/comment.html'
 
     def get_success_url(self):
         return reverse(
