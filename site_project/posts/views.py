@@ -1,14 +1,13 @@
-from django.db.models import Count
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
+from django.db.models import Count
 from django.shortcuts import get_object_or_404, redirect, reverse
-from django.utils import timezone
 from django.urls import reverse_lazy
-from django.views.generic import (
-    CreateView, DeleteView, DetailView, ListView, UpdateView
-)
-
+from django.utils import timezone
+from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
+                                  UpdateView)
 from posts.models import Category, Comment, Post, User
+
 from .forms import CommentForm, PostForm, UserForm
 
 

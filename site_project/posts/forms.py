@@ -3,7 +3,6 @@ from django.core.exceptions import ValidationError
 
 from .models import Comment, Post, User
 
-
 BAD_WORDS = (
     'блять', 'бля', 'сука', 'пиздец', 'пизда', 'жопа', 'говно', 'хуй',
 )
