@@ -4,6 +4,26 @@
 
 Для разворачивания проекта склонируйте этот репозиторий, не забудьте установить зависимости и сделать миграции.
 
+git clone <ссылка на репозиторий на гитхаб>
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+cd site_project
+
+python3 manage.py migrate
+
+python3 manage.py createsuperuser
+
+python3 manage.py runserver
+
+Далее необходимо зайти в панель упраления по адресу http://127.0.0.1:8000/admin/, используя логин и пароль
+суперпользователя. Создать несколько местоположений и категорий по вашему выбору, которые потом будут
+указывать пользователи.
+
 Приятного использования!
 
 Автор: Александр Русанов, shurik.82rusanov@yandex.ru
