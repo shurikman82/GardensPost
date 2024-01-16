@@ -16,6 +16,10 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+Создайте файл `.env` по примеру `.env.example`:
+```bash
+touch .env
+```
 ```bash
 cd site_project
 ```
